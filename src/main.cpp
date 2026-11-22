@@ -68,7 +68,7 @@ notes!
     to it.
 
 ~ to-do
-    ~ clean up code/ seggregate code into functions and/or .h files.
+    ~ clean up code/ segregate code into functions and/or .h files.
     make sure the UI looks clean and the messages look nice. we want
     a smooth user experience.
     ~ write a decrypter algorithm that takes a decryptkey.
