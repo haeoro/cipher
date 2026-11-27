@@ -31,11 +31,11 @@ int main(int argc, char *argv[])
     std::vector<char> specialMsg = {};
     int sIndex = 0;
     int argLength = strlen(argv[2]);
+    std::cout << "\rworking...";
     while ( sIndex != argLength )
     {
         // while this is going do encrypting... then display decryption key
         Sleep(1000);
-        std::cout << "working...\n";
         int randNum = randnum();
         auto pos = decryptkey.begin();
         pos = decryptkey.insert(pos, randNum);
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
         pos++;
     }
 
-    std::cout << "complete!\n\n";
+    std::cout << "\ncomplete!\n\n";
     std::cout << "original message: " << argv[2] << '\n';
     std::cout << "encrypted message: ";
     for (int i = 0; i != specialMsg.size(); i++)
@@ -68,7 +68,7 @@ notes!
     to it.
 
 ~ to-do
-    ~ clean up code/ segregate code into functions and/or .h files.
+    ~ clean up code/ seggregate code into functions and/or .h files.
     make sure the UI looks clean and the messages look nice. we want
     a smooth user experience.
     ~ write a decrypter algorithm that takes a decryptkey.
