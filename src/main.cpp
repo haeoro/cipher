@@ -45,8 +45,12 @@ int main(int argc, char *argv[])
     }
 
     std::cout << "\ncomplete!\n\n";
-    std::cout << "original message: " << argv[2] << '\n';
-    std::cout << "encrypted message: ";
+    std::cout << "original message: ";
+    for (int i = 2; i < argc; i++)
+    {
+        std::cout << argv[i] << " ";
+    }
+    std::cout << "\nencrypted message: ";
     for (int i = 0; i != specialMsg.size(); i++)
     {
         std::cout << specialMsg[i];
@@ -68,9 +72,9 @@ notes!
     to it.
 
 ~ to-do
-    ~ clean up code/ seggregate code into functions and/or .h files.
-    make sure the UI looks clean and the messages look nice. we want
+
     a smooth user experience.
+    ~ write code to encrypt sentences i.e. encrypt multiple arguments. 
     ~ write a decrypter algorithm that takes a decryptkey.
     ~ document functions and header files clearly and concisely.
 

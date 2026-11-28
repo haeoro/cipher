@@ -5,7 +5,6 @@
 int randnum()
 {
     const int asciiToIntDistance = 48;
-
     std::srand(time(0));
 	int x = std::rand();
 
